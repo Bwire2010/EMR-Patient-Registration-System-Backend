@@ -204,13 +204,13 @@ REST_FRAMEWORK = {
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ],
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Vite default port
+    'http://localhost:3000',  # Vite default port
 ]
 
 OAUTH2_PROVIDER = {
