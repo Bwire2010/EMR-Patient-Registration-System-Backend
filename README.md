@@ -136,15 +136,15 @@ Authorization: Bearer your_token_here
 
 ## 🔍 API Endpoints
 
-| Method | Endpoint                    | Description                  |
-|--------|-----------------------------|------------------------------|
-| GET    | `/api/patients/`            | List patients                |
-| POST   | `/api/patients/`            | Create a patient             |
-| GET    | `/api/patients/search/?q=`  | Search by name or MRN        |
-| PATCH  | `/api/patients/{id}/`       | Update a patient             |
-| DELETE | `/api/patients/{id}/`       | Delete a patient             |
-| GET    | `/api/facilities/`          | List facilities              |
-| GET    | `/api/services/`            | List service types           |
+| Method | Endpoint                     | Description                  |
+|--------|----------------------------- |------------------------------|
+| GET    | `/api/patients/?page=${page}`| List patients                |
+| POST   | `/api/patients/`             | Create a patient             |
+| GET    | `/api/patients/search/?q=`   | Search by name or MRN        |
+| PATCH  | `/api/patients/{id}/`        | Update a patient             |
+| DELETE | `/api/patients/{id}/`        | Delete a patient             |
+| GET    | `/api/facilities/`           | List facilities              |
+| GET    | `/api/services/`             | List service types           |
 
 ---
 

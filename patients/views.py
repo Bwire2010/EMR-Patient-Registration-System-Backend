@@ -15,6 +15,7 @@ from rest_framework.pagination import PageNumberPagination
 from django.db.models import Q
 from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 @api_view(['POST'])
 def custom_token_view(request):
     username = request.data.get('username')
