@@ -89,6 +89,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # React default port
+    'https://emr-patient-registration-system-fro.vercel.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [

@@ -53,7 +53,8 @@ class Patient(models.Model):
     class Meta:
         indexes = [
             models.Index(fields=['mrn']),
-            models.Index(fields=['last_name', 'first_name']),
+            models.Index(fields=['first_name']),
+            models.Index(fields=['last_name']),
         ]
 
     def __str__(self):
