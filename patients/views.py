@@ -51,8 +51,6 @@ def custom_token_view(request):
     return Response(response.json(), status=response.status_code)
 
 
-
-
 class NoPagination(PageNumberPagination):
     page_size = None
 
@@ -68,9 +66,6 @@ class ServiceTypeViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     pagination_class = NoPagination 
 
-
-# class StandardResultsSetPagination(PageNumberPagination):
-#     page_size = 10
 
 class PatientViewSet(viewsets.ModelViewSet):
     queryset = Patient.objects.all()

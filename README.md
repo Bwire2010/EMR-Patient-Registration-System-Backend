@@ -22,6 +22,10 @@ This is the backend for the **Multi-Facility EMR Patient Registration System**, 
 - **Backend Framework**: Django 5.2
 - **API Framework**: Django REST Framework
 - **Database**: PostgreSQL
+  - Indexed fields for optimized search:
+    - `mrn` (Medical Record Number)
+    - `first_name`
+    - `last_name`
 - **Authentication**: OAuth2 via `django-oauth-toolkit`
 - **Pagination**: DRF's `PageNumberPagination`
 - **Environment Configuration**: `python-decouple`
@@ -99,6 +103,14 @@ python manage.py runserver
 
 > Server will start at: `http://127.0.0.1:8000/`
 
+
+---
+
+### 8. Load Initial Data (Facilities & Services)
+
+```bash
+python manage.py loaddata patients/fixtures/initial_data.json
+
 ---
 
 ## 🔑 Authentication (OAuth2)
@@ -122,7 +134,8 @@ Response:
   "access_token": "your_token_here",
   "expires_in": 3600,
   "token_type": "Bearer",
-  "scope": "read write"
+  "scope": "read write",
+  "refresh_token": "your_refresh_token_here"
 }
 ```
 
@@ -200,4 +213,4 @@ MIT License
 
 ## ✍️ Author
 
-Patrobas Bwire – [LinkedIn](https://www.linkedin.com/in/your-profile)
+Patrobas Bwire – [LinkedIn](https://www.linkedin.com/in/patrobas-bwire/)

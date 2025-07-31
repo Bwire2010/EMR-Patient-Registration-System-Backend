@@ -19,6 +19,7 @@
   {"model": "patients.facility", "pk": 18, "fields": {"name": "Embu Level 5 Hospital", "location": "Embu"}},
   {"model": "patients.facility", "pk": 19, "fields": {"name": "Thika Level 5", "location": "Thika"}},
   {"model": "patients.facility", "pk": 20, "fields": {"name": "Karatina Sub-county Hospital", "location": "Karatina"}},
+  {"model": "patients.facility", "pk": 21, "fields": {"name": "Mandera Sub-county Hospital", "location": "Mandera"}},
 
   {"model": "patients.servicetype", "pk": 1, "fields": {"name": "Lab", "description": "Laboratory diagnostics"}},
   {"model": "patients.servicetype", "pk": 2, "fields": {"name": "Radiology", "description": "Imaging services"}},
