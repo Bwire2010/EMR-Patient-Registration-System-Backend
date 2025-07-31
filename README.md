@@ -110,7 +110,7 @@ python manage.py runserver
 
 ```bash
 python manage.py loaddata patients/fixtures/initial_data.json
-
+```
 ---
 
 ## 🔑 Authentication (OAuth2)
